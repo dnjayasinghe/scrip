@@ -1,0 +1,572 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Jul  2 10:00:11 2019
+# Process ID: 28728
+# Current directory: /home/darshana/newlowrisc/lowrisc-chip/fpga/board/sasebo/ip_repo/edit_myip_v1_1.runs/synth_1
+# Command line: vivado -log myip_v1_1.vds -mode batch -messageDb vivado.pb -notrace -source myip_v1_1.tcl
+# Log file: /home/darshana/newlowrisc/lowrisc-chip/fpga/board/sasebo/ip_repo/edit_myip_v1_1.runs/synth_1/myip_v1_1.vds
+# Journal file: /home/darshana/newlowrisc/lowrisc-chip/fpga/board/sasebo/ip_repo/edit_myip_v1_1.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script '/home/darshana/.Xilinx/Vivado/init.tcl'
+source myip_v1_1.tcl -notrace
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-25:part0:1.0 available at /opt/Xilinx/Vivado/2015.4/data/boards/board_files/arty-s7-25/E.0/board.xml as part xc7s25csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.0 available at /opt/Xilinx/Vivado/2015.4/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cmod-s7-25:part0:1.0 available at /opt/Xilinx/Vivado/2015.4/data/boards/board_files/cmod-s7-25/B.0/board.xml as part xc7s25csga225-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-07s:part0:1.0 available at /opt/Xilinx/Vivado/2015.4/data/boards/board_files/cora-z7-07s/B.0/board.xml as part xc7z007sclg400-1 specified in board_part file is either invalid or not available
+Command: synth_design -top myip_v1_1 -part xc7k325tfbg676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-1223] The version limit for your license is '2017.01' and will expire in -882 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 28733 
+WARNING: [Synth 8-2611] redeclaration of ansi port blk_dout is not allowed [/home/darshana/newlowrisc/lowrisc-chip/fpga/board/sasebo/ip_repo/myip_1.1/hdl/myip_v1_1_S00_AXI.v:155]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1083.066 ; gain = 233.055 ; free physical = 4344 ; free virtual = 11777
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'myip_v1_1' [/home/darshana/newlowrisc/lowrisc-chip/fpga/board/sasebo/ip_repo/myip_1.1/hdl/myip_v1_1.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'myip_v1_1_S00_AXI' [/home/darshana/newlowrisc/lowrisc-chip/fpga/board/sasebo/ip_repo/myip_1.1/hdl/myip_v1_1_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/darshana/newlowrisc/lowrisc-chip/fpga/board/sasebo/ip_repo/myip_1.1/hdl/myip_v1_1_S00_AXI.v:304]
+INFO: [Synth 8-226] default block is never used [/home/darshana/newlowrisc/lowrisc-chip/fpga/board/sasebo/ip_repo/myip_1.1/hdl/myip_v1_1_S00_AXI.v:673]
+INFO: [Synth 8-256] done synthesizing module 'myip_v1_1_S00_AXI' (1#1) [/home/darshana/newlowrisc/lowrisc-chip/fpga/board/sasebo/ip_repo/myip_1.1/hdl/myip_v1_1_S00_AXI.v:4]
+INFO: [Synth 8-638] synthesizing module 'LBUS_IF' [/home/darshana/newlowrisc/lowrisc-chip/fpga/board/sasebo/ip_repo/myip_1.1/hdl/myip_v1_1.v:253]
+INFO: [Synth 8-256] done synthesizing module 'LBUS_IF' (2#1) [/home/darshana/newlowrisc/lowrisc-chip/fpga/board/sasebo/ip_repo/myip_1.1/hdl/myip_v1_1.v:253]
+INFO: [Synth 8-638] synthesizing module 'MK_CLKRST' [/home/darshana/newlowrisc/lowrisc-chip/fpga/board/sasebo/ip_repo/myip_1.1/hdl/myip_v1_1.v:162]
+INFO: [Synth 8-638] synthesizing module 'IBUFG' [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:14569]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IBUFG' (3#1) [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:14569]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (4#1) [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-638] synthesizing module 'MK_RST' [/home/darshana/newlowrisc/lowrisc-chip/fpga/board/sasebo/ip_repo/myip_1.1/hdl/myip_v1_1.v:194]
+INFO: [Synth 8-256] done synthesizing module 'MK_RST' (5#1) [/home/darshana/newlowrisc/lowrisc-chip/fpga/board/sasebo/ip_repo/myip_1.1/hdl/myip_v1_1.v:194]
+INFO: [Synth 8-256] done synthesizing module 'MK_CLKRST' (6#1) [/home/darshana/newlowrisc/lowrisc-chip/fpga/board/sasebo/ip_repo/myip_1.1/hdl/myip_v1_1.v:162]
+INFO: [Synth 8-256] done synthesizing module 'myip_v1_1' (7#1) [/home/darshana/newlowrisc/lowrisc-chip/fpga/board/sasebo/ip_repo/myip_1.1/hdl/myip_v1_1.v:4]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1115.316 ; gain = 265.305 ; free physical = 4311 ; free virtual = 11745
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1115.316 ; gain = 265.305 ; free physical = 4311 ; free virtual = 11744
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tfbg676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1123.320 ; gain = 273.309 ; free physical = 4311 ; free virtual = 11744
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k325tfbg676-1
+INFO: [Synth 8-5544] ROM "trig_wr" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "blk_encdec" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "blk_kin" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "blk_kin" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "blk_kin" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "blk_kin" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "blk_kin" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "blk_kin" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "blk_kin" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "blk_kin" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "blk_din" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "blk_din" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "blk_din" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "blk_din" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "blk_din" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "blk_din" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "blk_din" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "blk_din" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1172.422 ; gain = 322.410 ; free physical = 4263 ; free virtual = 11697
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	              128 Bit    Registers := 4     
+	               32 Bit    Registers := 23    
+	               16 Bit    Registers := 3     
+	                7 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   5 Input    128 Bit        Muxes := 1     
+	   2 Input    128 Bit        Muxes := 4     
+	   2 Input     32 Bit        Muxes := 22    
+	  32 Input     32 Bit        Muxes := 22    
+	  12 Input     16 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  32 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module myip_v1_1 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 2     
+Module myip_v1_1_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	              128 Bit    Registers := 1     
+	               32 Bit    Registers := 23    
+	                7 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   5 Input    128 Bit        Muxes := 1     
+	   2 Input    128 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 22    
+	  32 Input     32 Bit        Muxes := 22    
+	  32 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module LBUS_IF 
+Detailed RTL Component Info : 
++---Registers : 
+	              128 Bit    Registers := 3     
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 2     
+	  12 Input     16 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1257.430 ; gain = 407.418 ; free physical = 4183 ; free virtual = 11617
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "lbus_if/blk_encdec" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lbus_if/blk_kin" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lbus_if/blk_kin" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lbus_if/blk_kin" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lbus_if/blk_kin" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lbus_if/blk_kin" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lbus_if/blk_kin" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lbus_if/blk_kin" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lbus_if/blk_kin" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lbus_if/blk_din" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lbus_if/blk_din" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lbus_if/blk_din" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lbus_if/blk_din" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lbus_if/blk_din" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lbus_if/blk_din" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lbus_if/blk_din" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lbus_if/blk_din" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1265.430 ; gain = 415.418 ; free physical = 4176 ; free virtual = 11610
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1265.430 ; gain = 415.418 ; free physical = 4176 ; free virtual = 11610
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'myip_v1_1_S00_AXI_inst/\axi_rresp_reg[0] ' (FDRE) to 'myip_v1_1_S00_AXI_inst/\axi_rresp_reg[1] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (myip_v1_1_S00_AXI_inst/\axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'myip_v1_1_S00_AXI_inst/\axi_bresp_reg[0] ' (FDRE) to 'myip_v1_1_S00_AXI_inst/\axi_bresp_reg[1] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (myip_v1_1_S00_AXI_inst/\axi_bresp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (myip_v1_1_S00_AXI_inst/dready_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (myip_v1_1_S00_AXI_inst/kready_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[64] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[96] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[80] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[48] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[112] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[65] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[33] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[97] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[81] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[49] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[113] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[66] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[34] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[98] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[82] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[50] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[114] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[67] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[35] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[99] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[83] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[51] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[115] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[68] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[36] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[100] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[84] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[52] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[116] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[69] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[37] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[101] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[85] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[53] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[117] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[70] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[38] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[102] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[86] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[54] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[118] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[71] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[103] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[87] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[119] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[72] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[40] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[104] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[88] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[56] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[120] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[73] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[105] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[89] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[57] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[121] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[74] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[42] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[106] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[90] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[58] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[122] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[75] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[43] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[107] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[91] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[59] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lbus_if/blk_dout_reg_reg[123] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance '\lbus_if/lbus_do_reg[8] ' (FDCE) to '\lbus_if/lbus_do_reg[14] '
+INFO: [Synth 8-3886] merging instance '\lbus_if/lbus_do_reg[9] ' (FDCE) to '\lbus_if/lbus_do_reg[14] '
+INFO: [Synth 8-3886] merging instance '\lbus_if/lbus_do_reg[10] ' (FDCE) to '\lbus_if/lbus_do_reg[14] '
+WARNING: [Synth 8-3332] Sequential element (\axi_awaddr_reg[1] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\axi_awaddr_reg[0] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[127] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[126] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[125] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[124] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[123] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[122] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[121] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[120] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[119] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[118] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[117] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[116] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[115] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[114] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[113] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[112] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[111] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[110] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[109] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[108] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[107] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[106] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[105] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[104] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[103] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[102] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[101] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[100] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[99] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[98] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[97] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[96] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[95] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[94] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[93] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[92] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[91] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[90] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[89] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[88] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[87] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[86] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[85] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[84] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[83] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[82] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[81] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[80] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[79] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[78] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[77] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[76] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[75] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[74] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[73] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[72] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[71] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[70] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[69] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[68] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[67] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[66] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[65] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[64] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[63] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[62] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[61] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[60] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[59] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[58] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[57] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[56] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[55] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[54] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[53] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[52] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[51] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[50] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[49] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[48] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[47] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[46] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[45] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[44] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[43] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[42] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[41] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[40] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[39] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[38] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[37] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[36] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[35] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[34] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[33] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[32] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[31] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (\blk_dout_reg[30] ) is unused and will be removed from module myip_v1_1_S00_AXI.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1309.078 ; gain = 459.066 ; free physical = 4129 ; free virtual = 11563
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1309.078 ; gain = 459.066 ; free physical = 4129 ; free virtual = 11563
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1309.078 ; gain = 459.066 ; free physical = 4129 ; free virtual = 11563
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1309.078 ; gain = 459.066 ; free physical = 4128 ; free virtual = 11562
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1309.078 ; gain = 459.066 ; free physical = 4128 ; free virtual = 11562
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1309.078 ; gain = 459.066 ; free physical = 4128 ; free virtual = 11562
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1309.078 ; gain = 459.066 ; free physical = 4128 ; free virtual = 11562
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1309.078 ; gain = 459.066 ; free physical = 4128 ; free virtual = 11562
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1309.078 ; gain = 459.066 ; free physical = 4128 ; free virtual = 11562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1309.078 ; gain = 459.066 ; free physical = 4128 ; free virtual = 11562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1309.078 ; gain = 459.066 ; free physical = 4128 ; free virtual = 11562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1309.078 ; gain = 459.066 ; free physical = 4128 ; free virtual = 11562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |     4|
+|3     |LUT1   |    21|
+|4     |LUT2   |     4|
+|5     |LUT3   |     7|
+|6     |LUT4   |     6|
+|7     |LUT5   |    17|
+|8     |LUT6   |   398|
+|9     |MUXF7  |    96|
+|10    |FDCE   |   288|
+|11    |FDPE   |     1|
+|12    |FDRE   |   786|
+|13    |IBUF   |    72|
+|14    |IBUFG  |     1|
+|15    |OBUF   |    62|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------------+------------------+------+
+|      |Instance                 |Module            |Cells |
++------+-------------------------+------------------+------+
+|1     |top                      |                  |  1765|
+|2     |  lbus_if                |LBUS_IF           |   381|
+|3     |  mk_clkrst              |MK_CLKRST         |    42|
+|4     |    u20                  |MK_RST            |    40|
+|5     |  myip_v1_1_S00_AXI_inst |myip_v1_1_S00_AXI |  1174|
++------+-------------------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1309.078 ; gain = 459.066 ; free physical = 4128 ; free virtual = 11562
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 280 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1309.078 ; gain = 308.137 ; free physical = 4128 ; free virtual = 11562
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1309.078 ; gain = 459.066 ; free physical = 4128 ; free virtual = 11562
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 77 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUFG => IBUF: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+168 Infos, 105 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1377.090 ; gain = 446.746 ; free physical = 4084 ; free virtual = 11518
+report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1409.105 ; gain = 0.000 ; free physical = 4082 ; free virtual = 11516
+INFO: [Common 17-206] Exiting Vivado at Tue Jul  2 10:00:29 2019...
